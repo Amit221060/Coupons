@@ -1,5 +1,5 @@
 .heading{
-  text-align: center;
+  text-align:center;
   font-size: 50px;
   font-family: 'Courier New', Courier, monospace;
   /* color: */
@@ -26,4 +26,33 @@
   margin:30px;
   border-radius:15px;
   width: 120px;
+}
+.couponList{
+  border:1px solid rgb(113, 91, 192);
+  background:rgb(206, 124, 124);
+  height:100%;
+  /* position: fixed; */
+  float: right;
+  right: 0;
+  top: 5%;
+}
+.code{
+  border-radius: 10px;
+  padding: 7px;
+  color:White;
+  background-color: skyblue;
+  height:40px;
+  text-align: center;
+  width: 145px;
+  font-weight: 600;
+}
+.couponjson{
+  align-self:start;
+  color:rgb(95, 105, 243);
+  font-weight:100;
+  padding: 0;
+  margin: 0;
+}
+.jsonC{
+  overflow-x:auto
 }
