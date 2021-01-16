@@ -10,6 +10,8 @@ export class AppComponent implements OnInit {
   title = 'couponsDemo';
   formData: FormGroup
   submitted: boolean = false;
+  couponsAvailable=[]
+  couponJson;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -81,6 +83,10 @@ export class AppComponent implements OnInit {
       "rules": this.formData.get('couponRules').value
     }
     console.log(newCoupon)
+    this.couponJson=JSON.stringify(newCoupon)
+    alert("Yay Ye! Coupon Generated Successfuly")
+    this.couponsAvailable.push(newCoupon)
+
   }
 
   save() {
